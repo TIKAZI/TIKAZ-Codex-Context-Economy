@@ -9,10 +9,10 @@
 
 <table data-proof-strip="true" width="100%">
 <tr>
-<td data-proof-cell="true" align="center" width="25%" title="Six fixed tasks: 4,698 to 1,422 estimated tokens"><h3>69.73%</h3><sub>Fixed long-context reduction</sub></td>
-<td data-proof-cell="true" align="center" width="25%" title="Six fixed prompt cases: 252 to 182 estimated tokens"><h3>27.78%</h3><sub>Fixed prompt reduction</sub></td>
-<td data-proof-cell="true" align="center" width="25%" title="Literal recall on declared protected facts"><h3>46/46</h3><sub>Protected facts retained</sub></td>
-<td data-proof-cell="true" align="center" width="25%" title="Text, numbers, tables, and page anchors; visual accuracy pending"><h3>3/3</h3><sub>Generated PDF checks</sub></td>
+<td data-proof-cell="true" align="center" width="200" title="Six fixed tasks: 4,698 to 1,422 estimated tokens"><h3>69.73%</h3><sub>Fixed long-context reduction</sub></td>
+<td data-proof-cell="true" align="center" width="200" title="Six fixed prompt cases: 252 to 182 estimated tokens"><h3>27.78%</h3><sub>Fixed prompt reduction</sub></td>
+<td data-proof-cell="true" align="center" width="200" title="Literal recall on declared protected facts"><h3>46/46</h3><sub>Protected facts retained</sub></td>
+<td data-proof-cell="true" align="center" width="200" title="Text, numbers, tables, and page anchors; visual accuracy pending"><h3>3/3</h3><sub>Generated PDF checks</sub></td>
 </tr>
 </table>
 
