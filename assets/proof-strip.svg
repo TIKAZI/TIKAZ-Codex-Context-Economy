@@ -1,0 +1,9 @@
+<svg width="1200" height="170" viewBox="0 0 1200 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="proof-title">
+<title id="proof-title">69.73%: Six fixed tasks: 4,698 to 1,422 estimated tokens. 27.78%: Six fixed prompt cases: 252 to 182 estimated tokens. 46/46: Literal recall on declared protected facts. 3/3: Text, numbers, tables, and page anchors; visual accuracy pending</title>
+<style>
+.value { fill: #60A5FA; font: 750 46px "Segoe UI", Arial, sans-serif; }
+.label { color: #334155; font: 600 20px/1.35 "Segoe UI", "Microsoft YaHei", Arial, sans-serif; text-align: center; }
+@media (prefers-color-scheme: dark) { .label { color: #CBD5E1; } }
+</style>
+<g class="proof" aria-label="Six fixed tasks: 4,698 to 1,422 estimated tokens"><text class="value" x="150" y="70" text-anchor="middle">69.73%</text><foreignObject x="15" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">Fixed long-context reduction</div></foreignObject></g><g class="proof" aria-label="Six fixed prompt cases: 252 to 182 estimated tokens"><text class="value" x="450" y="70" text-anchor="middle">27.78%</text><foreignObject x="315" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">Fixed prompt reduction</div></foreignObject></g><g class="proof" aria-label="Literal recall on declared protected facts"><text class="value" x="750" y="70" text-anchor="middle">46/46</text><foreignObject x="615" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">Protected facts retained</div></foreignObject></g><g class="proof" aria-label="Text, numbers, tables, and page anchors; visual accuracy pending"><text class="value" x="1050" y="70" text-anchor="middle">3/3</text><foreignObject x="915" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">Generated PDF checks</div></foreignObject></g>
+</svg>
