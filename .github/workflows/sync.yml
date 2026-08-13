@@ -1,0 +1,37 @@
+name: Sync from TIKAZ AI Skills
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v5
+        with:
+          repository: TIKAZI/TIKAZ-AI-Skills
+          path: _canonical
+      - name: Rebuild distribution
+        shell: powershell
+        run: |
+          python .\_canonical\scripts\export_distribution.py --suite context-economy --output .\_publish
+          git rm -r --ignore-unmatch .
+          Get-ChildItem .\_publish -Force | Copy-Item -Destination . -Recurse -Force
+          Remove-Item .\_canonical, .\_publish -Recurse -Force
+      - name: Validate
+        shell: powershell
+        run: .\scripts\validate_distribution.ps1
+      - name: Commit canonical update
+        shell: powershell
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if (git diff --cached --quiet) { Write-Host "Already current"; exit 0 }
+          git commit -m "chore: sync context-economy from canonical collection"
+          git push

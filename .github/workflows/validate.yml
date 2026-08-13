@@ -1,0 +1,9 @@
+name: Validate Distribution
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+      - shell: powershell
+        run: .\scripts\validate_distribution.ps1
