@@ -7,6 +7,15 @@
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.8.0-60A5FA.svg" alt="0.8.0" /></p>
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-AI-Skills">← Explore all seven TIKAZ AI Skills for Codex suites</a></p>
 
+<table data-proof-strip="true" width="100%">
+<tr>
+<td data-proof-cell="true" align="center" width="25%" title="Six fixed tasks: 4,698 to 1,422 estimated tokens"><h3>69.73%</h3><sub>Fixed long-context reduction</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="Six fixed prompt cases: 252 to 182 estimated tokens"><h3>27.78%</h3><sub>Fixed prompt reduction</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="Literal recall on declared protected facts"><h3>46/46</h3><sub>Protected facts retained</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="Text, numbers, tables, and page anchors; visual accuracy pending"><h3>3/3</h3><sub>Generated PDF checks</sub></td>
+</tr>
+</table>
+
 ---
 
 ## ✨ One suite, ready to install

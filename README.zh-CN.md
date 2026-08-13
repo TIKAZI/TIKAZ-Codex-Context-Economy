@@ -10,6 +10,16 @@
 
 Context Economy 不是“全部压缩”的技巧。它准备的是**仍然可以核验的最小有用上下文**：支持的文档转成可复用 Markdown，事实与来源锚点得到保护，图片和复杂表格进入 Text / Hybrid / Source 路由，转换不确定时保留原始来源。
 
+
+<table data-proof-strip="true" width="100%">
+<tr>
+<td data-proof-cell="true" align="center" width="25%" title="6 个固定任务：估算 Token 从 4,698 降至 1,422"><h3>69.73%</h3><sub>固定长上下文估算减少</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="6 个固定提示词样例：估算 Token 从 252 降至 182"><h3>27.78%</h3><sub>固定提示词估算减少</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="声明保护事实的字面召回，不等同语义准确率"><h3>46/46</h3><sub>保护事实字面保留</sub></td>
+<td data-proof-cell="true" align="center" width="25%" title="文字、数字、表格和页锚点；视觉准确率待测"><h3>3/3</h3><sub>生成 PDF 字面检查</sub></td>
+</tr>
+</table>
+
 ## 🧩 可以单独使用的 Skill
 
 | Skill | 单独使用场景 | 主要输出 |
