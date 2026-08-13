@@ -31,6 +31,16 @@ Clone or download this repository, then copy the repository folder into the Skil
 git clone https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy.git
 ```
 
+## 🧩 Use one Skill independently
+
+Every Skill below has its own promise, installation command, example, execution contract, limits, and bilingual project page:
+
+- [`context-audit`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-audit/index.html)
+- [`context-benchmark`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-benchmark/index.html)
+- [`context-pack`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-pack/index.html)
+- [`conversation-checkpoint`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/conversation-checkpoint/index.html)
+- [`context-economy`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-economy/index.html)
+
 ## 🚀 Try it
 
 ```text
