@@ -1,8 +1,8 @@
 <svg width="1200" height="170" viewBox="0 0 1200 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="proof-title">
 <title id="proof-title">69.73%: 6 个固定任务：估算 Token 从 4,698 降至 1,422. 27.78%: 6 个固定提示词样例：估算 Token 从 252 降至 182. 46/46: 声明保护事实的字面召回，不等同语义准确率. 3/3: 文字、数字、表格和页锚点；视觉准确率待测</title>
 <style>
-.value { fill: #60A5FA; font: 750 46px "Segoe UI", Arial, sans-serif; }
-.label { color: #334155; font: 600 20px/1.35 "Segoe UI", "Microsoft YaHei", Arial, sans-serif; text-align: center; }
+.value { fill: #60A5FA; font: 750 54px "Segoe UI", Arial, sans-serif; }
+.label { color: #334155; font: 600 24px/1.3 "Segoe UI", "Microsoft YaHei", Arial, sans-serif; text-align: center; }
 @media (prefers-color-scheme: dark) { .label { color: #CBD5E1; } }
 </style>
 <g class="proof" aria-label="6 个固定任务：估算 Token 从 4,698 降至 1,422"><text class="value" x="150" y="70" text-anchor="middle">69.73%</text><foreignObject x="15" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">固定长上下文估算减少</div></foreignObject></g><g class="proof" aria-label="6 个固定提示词样例：估算 Token 从 252 降至 182"><text class="value" x="450" y="70" text-anchor="middle">27.78%</text><foreignObject x="315" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">固定提示词估算减少</div></foreignObject></g><g class="proof" aria-label="声明保护事实的字面召回，不等同语义准确率"><text class="value" x="750" y="70" text-anchor="middle">46/46</text><foreignObject x="615" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">保护事实字面保留</div></foreignObject></g><g class="proof" aria-label="文字、数字、表格和页锚点；视觉准确率待测"><text class="value" x="1050" y="70" text-anchor="middle">3/3</text><foreignObject x="915" y="91" width="270" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="label">生成 PDF 字面检查</div></foreignObject></g>
