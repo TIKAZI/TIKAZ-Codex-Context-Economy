@@ -1,6 +1,6 @@
 suite: context-economy
 canonical: https://github.com/TIKAZI/TIKAZ-AI-Skills
-canonical_commit: fe9abd7c535b45d2785fd2215f7356df53532649
+canonical_commit: 84d2229bc6ac0d7ac28643ef62a515177ed58bec
 version: 0.8.0
 maintainer: TIKAZ
 mode: automated-distribution
