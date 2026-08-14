@@ -19,9 +19,9 @@ This repository is an automatically synchronized distribution of the canonical [
 
 ## 🧩 What makes it different
 
-- **Paste text or attach files and let the workflow choose Text / Hybrid / Source automatically**
-- **Document-to-Markdown preparation compacts text while retaining page anchors, protected facts, table checks, and unresolved visual evidence**
-- **Documents with images split into compact text, visual relevance filtering, bounded vision work, and source fallback instead of sending every page blindly**
+- **Paste text, attach files, or provide a webpage and let the workflow choose Text / Hybrid / Source automatically**
+- **The optional pinned Defuddle adapter keeps source HTML, cleaned HTML, Markdown, metadata, protected facts, and separate byte/token estimates**
+- **Public-URL safety checks, bounded fetching, pending visual evidence, and source-preserving fallback keep uncertain pages visible instead of pretending extraction succeeded**
 
 ## 📦 Install
 
@@ -44,11 +44,11 @@ Every Skill below has its own promise, installation command, example, execution 
 ## 🚀 Try it
 
 ```text
-Process my pasted text or attached files for this task. Automatically choose Text, Hybrid, or Source, prepare reusable Markdown where safe, retain protected facts and anchors, and make every omission visible.
+Process my pasted text, attached files, or webpage for this task. Automatically choose Text, Hybrid, or Source, prepare reusable Markdown where safe, retain protected facts and anchors, and make every omission visible.
 ```
 
 ```text
-This document contains images or tables. Compact the text separately, skip decorative and duplicate visuals, queue only task-relevant visual evidence, and preserve uncertain source pages.
+Extract this webpage into traceable Markdown. Keep the source HTML, metadata, images and complex-table warnings; do not treat pending visuals as inspected.
 ```
 
 ```text
