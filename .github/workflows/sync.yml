@@ -9,10 +9,10 @@ jobs:
   sync:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           repository: TIKAZI/TIKAZ-AI-Skills
           path: _canonical
