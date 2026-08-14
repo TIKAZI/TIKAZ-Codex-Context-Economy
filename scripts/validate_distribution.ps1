@@ -12,5 +12,14 @@ foreach ($skill in $skills) {
   if ($content -match '(?i)[A-Z]:\\Users\\|[A-Z]:\\CodexTools') { $errors += "Machine-specific path: $($skill.FullName)" }
 }
 if (-not (Test-Path (Join-Path (Split-Path $PSScriptRoot -Parent) 'DISTRIBUTION.yml'))) { $errors += 'Missing distribution metadata' }
+$distributionRoot = Split-Path $PSScriptRoot -Parent
+$pyproject = Join-Path $distributionRoot 'pyproject.toml'
+if (Test-Path $pyproject) {
+  foreach ($required in @('VERSION', 'MANIFEST.in', '__init__.py', '__main__.py', 'references\threat-model.md', '.github\workflows\package.yml', '.github\workflows\codeql.yml', '.github\dependabot.yml')) {
+    if (-not (Test-Path (Join-Path $distributionRoot $required))) { $errors += "Missing package/security artifact: $required" }
+  }
+  $packageMetadata = Get-Content -Raw -Encoding UTF8 $pyproject
+  if ($packageMetadata -notmatch 'tikaz-context\s*=\s*"tikaz_context_economy:main"') { $errors += 'Missing tikaz-context console entry point' }
+}
 if ($errors.Count) { $errors | ForEach-Object { Write-Error $_ }; exit 1 }
 Write-Output "PASS: validated $($skills.Count) Skills in this distribution."

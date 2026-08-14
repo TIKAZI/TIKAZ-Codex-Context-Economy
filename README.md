@@ -4,7 +4,7 @@
 
 <h1 align="center">TIKAZ Context Economy for Codex</h1>
 <p align="center"><strong>A fidelity-first multimodal context compiler for the smallest useful context that remains checkable.</strong></p>
-<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.9.0-60A5FA.svg" alt="0.9.0" /></p>
+<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.10.0-60A5FA.svg" alt="0.10.0" /></p>
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-AI-Skills">← Explore all seven TIKAZ AI Skills for Codex suites</a></p>
 
 <p align="center"><img src="assets/proof-strip.svg" alt="Four verified core advantages" width="100%" /></p>
@@ -25,11 +25,25 @@ This repository is an automatically synchronized distribution of the canonical [
 
 ## 📦 Install
 
-Clone or download this repository, then copy the repository folder into the Skill directory supported by your Codex environment. The root `SKILL.md` is the suite orchestrator; child folders are focused Skills that can also be installed separately.
+Install the dependency-free core from GitHub. `pipx` is recommended because it keeps the command isolated:
 
 ```bash
-git clone https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy.git
+pipx install git+https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy.git
 ```
+
+Fallback for the active Python environment:
+
+```bash
+python -m pip install git+https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy.git
+```
+
+```bash
+tikaz-context doctor
+tikaz-context pack --input notes.md --query "prepare release evidence" --budget 800 --output .context-economy
+tikaz-context benchmark --output .context-benchmark
+```
+
+Uninstall the isolated CLI with `pipx uninstall tikaz-context-economy`. To install the Codex workflow rather than the CLI, clone or download this repository and copy the root orchestrator or one child Skill into the Skill directory supported by your host.
 
 ## 🧩 Use one Skill independently
 
@@ -54,6 +68,21 @@ Extract this webpage into traceable Markdown. Keep the source HTML, metadata, im
 ```text
 Create a recoverable checkpoint from this long conversation. Preserve decisions, constraints, completed evidence, file paths, numbers, commands, and open questions.
 ```
+
+## 📊 Evidence status
+
+- **Measured:** 50 checked-in synthetic cases, including six long-context variants with 69.7% estimated reduction; declared protected facts and expected anchors are reported separately.
+- **Pending:** provider billing telemetry, real-world and scanned-PDF generalization, vision-description accuracy, and downstream blind-answer quality.
+- **Unavailable until verified:** external adoption counts and testimonials. No usage claim is inferred from Stars or anonymous feedback.
+
+Run `tikaz-context benchmark --output .context-benchmark` and inspect the raw cases, metrics, and summary before repeating any number as a general claim.
+
+## 🔐 Privacy, security, and community evidence
+
+The core runs locally and does not automatically upload inputs, generated packs, diagnostics, or usage telemetry. Optional converters and the Defuddle adapter are explicit external boundaries. Read the [threat model](references/threat-model.md) and [security policy](SECURITY.md) before processing untrusted sources.
+
+Used it on a public or sanitized task? Submit a [verifiable user story](https://github.com/TIKAZI/TIKAZ-AI-Skills/issues/new?template=context_economy_showcase.yml) with the version, input profile, command, before/after measurements, fidelity checks, and reproducible artifacts. Unverified submissions are not promoted as adoption evidence.
+
 
 ## 🔄 How the suite works
 

@@ -1,0 +1,35 @@
+name: Package and CLI
+on: [push, pull_request]
+jobs:
+  installed-cli:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install .
+      - name: Verify installed CLI
+        run: |
+          tikaz-context --version
+          tikaz-context doctor
+          tikaz-context benchmark --output .context-benchmark
+  build-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install build
+      - run: python -m build
+      - run: sha256sum dist/* > dist/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tikaz-context-economy
+          path: dist/*
+          if-no-files-found: error
