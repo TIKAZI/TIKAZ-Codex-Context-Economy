@@ -4,7 +4,7 @@
 
 <h1 align="center">TIKAZ Context Economy for Codex</h1>
 <p align="center"><strong>A fidelity-first multimodal context compiler for the smallest useful context that remains checkable.</strong></p>
-<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.8.0-60A5FA.svg" alt="0.8.0" /></p>
+<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.9.0-60A5FA.svg" alt="0.9.0" /></p>
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-AI-Skills">← Explore all seven TIKAZ AI Skills for Codex suites</a></p>
 
 <p align="center"><img src="assets/proof-strip.svg" alt="Four verified core advantages" width="100%" /></p>
