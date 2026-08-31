@@ -4,7 +4,7 @@
 
 <h1 align="center">TIKAZ Context Economy for Codex</h1>
 <p align="center"><strong>A fidelity-first multimodal context compiler for the smallest useful context that remains checkable.</strong></p>
-<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.10.0-60A5FA.svg" alt="0.10.0" /></p>
+<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.11.0-60A5FA.svg" alt="0.11.0" /></p>
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-AI-Skills">← Explore all seven TIKAZ AI Skills for Codex suites</a></p>
 
 <p align="center"><img src="assets/proof-strip.svg" alt="Four verified core advantages" width="100%" /></p>
@@ -41,6 +41,8 @@ python -m pip install git+https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy.
 tikaz-context doctor
 tikaz-context pack --input notes.md --query "prepare release evidence" --budget 800 --output .context-economy
 tikaz-context benchmark --output .context-benchmark
+tikaz-context benchmark-retrieval --output .context-retrieval
+tikaz-context benchmark-retrieval --manifest benchmarks/retrieval-challenge-v1.json --output .context-retrieval-challenge
 ```
 
 Uninstall the isolated CLI with `pipx uninstall tikaz-context-economy`. To install the Codex workflow rather than the CLI, clone or download this repository and copy the root orchestrator or one child Skill into the Skill directory supported by your host.
@@ -71,11 +73,13 @@ Create a recoverable checkpoint from this long conversation. Preserve decisions,
 
 ## 📊 Evidence status
 
-- **Measured:** 50 checked-in synthetic cases, including six long-context variants with 69.7% estimated reduction; declared protected facts and expected anchors are reported separately.
+- **Retrieval development:** 100% Recall@5 and 100% Precision@5 on 14 fixed bilingual cases; dynamic selection retained 100% of labeled evidence with 28.50% estimated selected-text reduction.
+- **Frozen challenge:** 94.44% Recall@3 and 94.44% Precision@3 on 12 adversarial cases; dynamic selection retained 94.44% of labeled evidence with 38.81% estimated selected-text reduction.
+- **Context preparation:** 50 checked-in synthetic cases, including six long-context variants with 69.7% estimated reduction; declared protected facts and expected anchors are reported separately.
 - **Pending:** provider billing telemetry, real-world and scanned-PDF generalization, vision-description accuracy, and downstream blind-answer quality.
 - **Unavailable until verified:** external adoption counts and testimonials. No usage claim is inferred from Stars or anonymous feedback.
 
-Run `tikaz-context benchmark --output .context-benchmark` and inspect the raw cases, metrics, and summary before repeating any number as a general claim.
+Run the benchmark commands above and inspect the raw cases, metrics, and summary before repeating any number as a general claim. Retrieval accuracy, dynamic selection recall, estimated Token reduction, and downstream answer quality are separate measures.
 
 ## 🔐 Privacy, security, and community evidence
 
