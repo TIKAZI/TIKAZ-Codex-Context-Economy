@@ -1,10 +1,10 @@
 <p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
 
-<p align="center"><img src="assets/hero.svg" alt="TIKAZ Context Economy for Codex" width="100%" /></p>
+<p align="center"><img src="assets/hero.svg" alt="TIKAZ Context Orchestration for Codex" width="100%" /></p>
 
-<h1 align="center">TIKAZ Context Economy for Codex</h1>
-<p align="center"><strong>A fidelity-first multimodal context compiler for the smallest useful context that remains checkable.</strong></p>
-<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.11.0-60A5FA.svg" alt="0.11.0" /></p>
+<h1 align="center">TIKAZ Context Orchestration for Codex</h1>
+<p align="center"><strong>One controller for portable Context Economy and explicit ON-triggered local multimodal context compilation.</strong></p>
+<p align="center"><a href="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml"><img src="https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy/actions/workflows/validate.yml/badge.svg" alt="Validate" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f4c95d.svg" alt="MIT" /></a> <img src="https://img.shields.io/badge/version-0.12.0-60A5FA.svg" alt="0.12.0" /></p>
 <p align="center"><a href="https://github.com/TIKAZI/TIKAZ-AI-Skills">← Explore all seven TIKAZ AI Skills for Codex suites</a></p>
 
 <p align="center"><img src="assets/proof-strip.svg" alt="Four verified core advantages" width="100%" /></p>
@@ -19,9 +19,9 @@ This repository is an automatically synchronized distribution of the canonical [
 
 ## 🧩 What makes it different
 
-- **Paste text, attach files, or provide a webpage and let the workflow choose Text / Hybrid / Source automatically**
-- **The optional pinned Defuddle adapter keeps source HTML, cleaned HTML, Markdown, metadata, protected facts, and separate byte/token estimates**
-- **Public-URL safety checks, bounded fetching, pending visual evidence, and source-preserving fallback keep uncertain pages visible instead of pretending extraction succeeded**
+- **Context Orchestrator defaults to portable Economy and activates the dependency-rich local route only for a valid uppercase ON prefix**
+- **Economy and On-Premise share evidence slots, protected facts, retrieval ledgers, cost ledgers, omissions, Pending states, and source-preserving fallback**
+- **Hit quality, fidelity, estimated Token reduction, visual routing, latency, and downstream-answer quality remain separate metrics**
 
 ## 📦 Install
 
@@ -53,6 +53,8 @@ Every Skill below has its own promise, installation command, example, execution 
 
 - [`context-audit`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-audit/index.html)
 - [`context-benchmark`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-benchmark/index.html)
+- [`context-onpremise`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-onpremise/index.html)
+- [`context-orchestrator`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-orchestrator/index.html)
 - [`context-pack`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-pack/index.html)
 - [`conversation-checkpoint`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/conversation-checkpoint/index.html)
 - [`context-economy`](https://tikazi.github.io/TIKAZ-AI-Skills/skills/context-economy/index.html)
@@ -111,5 +113,7 @@ Development, source review, and cross-suite architecture live in [TIKAZ-AI-Skill
 Source modes, observed licenses, and concrete TIKAZ contributions are recorded in [SOURCES.yml](SOURCES.yml) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). TIKAZ-authored files are released under the [MIT License](LICENSE).
 
 ## 🌐 Explore the TIKAZ workflow family
+
+[🧠 Context On-Premise](https://github.com/TIKAZI/TIKAZ-Codex-Context-OnPremise) is the optional dependency-rich companion to portable Context Economy.
 
 [🏠 AI Skills](https://github.com/TIKAZI/TIKAZ-AI-Skills) · [⚡ Context Economy](https://github.com/TIKAZI/TIKAZ-Codex-Context-Economy) · [🎨 Frontend Design](https://github.com/TIKAZI/TIKAZ-Codex-Frontend-Design) · [🎬 Video Intelligence](https://github.com/TIKAZI/TIKAZ-Codex-Video-Intelligence) · [🛠️ Engineering](https://github.com/TIKAZI/TIKAZ-Codex-Engineering) · [🔬 Research](https://github.com/TIKAZI/TIKAZ-Codex-Knowledge-Research) · [📽️ Presentation](https://github.com/TIKAZI/TIKAZ-Codex-Presentation) · [🖼️ Visual Content](https://github.com/TIKAZI/TIKAZ-Codex-Visual-Content)
