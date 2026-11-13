@@ -22,4 +22,9 @@ if (Test-Path $pyproject) {
   if ($packageMetadata -notmatch 'tikaz-context\s*=\s*"tikaz_context_economy:main"') { $errors += 'Missing tikaz-context console entry point' }
 }
 if ($errors.Count) { $errors | ForEach-Object { Write-Error $_ }; exit 1 }
+$compatibilityValidator = Join-Path $PSScriptRoot 'validate_compatibility.py'
+if (-not (Test-Path $compatibilityValidator)) { Write-Error 'Missing compatibility validator'; exit 1 }
+python $compatibilityValidator --distribution-root (Split-Path $PSScriptRoot -Parent)
+if ($LASTEXITCODE -ne 0) { throw "Compatibility validation failed with exit code $LASTEXITCODE" }
 Write-Output "PASS: validated $($skills.Count) Skills in this distribution."
+

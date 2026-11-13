@@ -110,3 +110,11 @@
 - Introduced six suite orchestrators and 25 installable Skills.
 - Added evidence, routing, output, attribution, portability, and license gates.
 - Replaced unknown-license and incompatible vendored implementations with TIKAZ clean-room workflows.
+## 0.13.0 - 2026-11-13
+
+- Added the capability-first compatibility manifest for GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, and the explicit GPT-6 Sol fallback.
+- Documented Responses API, Agents SDK, and MCP integration boundaries with requested-versus-actual model evidence.
+- Added immutable canonical-commit resolution and compatibility validation to generated distribution sync workflows.
+- Corrected the Context Economy package metadata to match the published collection version.
+
+

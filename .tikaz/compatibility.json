@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "collection": "TIKAZ-AI-Skills",
+  "collection_version": "0.13.0",
+  "generated_from": "TIKAZ-AI-Skills/suites/context-economy",
+  "generated_for_suite": "context-economy",
+  "supported_hosts": [
+    "Codex Skill hosts using the portable SKILL.md contract"
+  ],
+  "model_profiles": {
+    "gpt-6-astra": {
+      "capabilities": [
+        "complex-reasoning",
+        "coding",
+        "long-horizon-planning",
+        "tool-use"
+      ],
+      "role_recommendation": [
+        "architecture",
+        "high-risk-review",
+        "ambiguous-multi-step-work"
+      ],
+      "actual_model": "UNVERIFIED",
+      "selection_basis": "Official model catalogue reviewed on checked_on date; role mapping is TIKAZ recommendation, not evidence of execution.",
+      "source_urls": [
+        "https://developers.openai.com/api/docs/models/gpt-6-astra"
+      ]
+    },
+    "gpt-6.1-sol": {
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "tool-use",
+        "structured-output"
+      ],
+      "role_recommendation": [
+        "root-coordination",
+        "complex-implementation",
+        "independent-review"
+      ],
+      "actual_model": "UNVERIFIED",
+      "selection_basis": "Official model catalogue reviewed on checked_on date; role mapping is TIKAZ recommendation, not evidence of execution.",
+      "source_urls": [
+        "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+      ]
+    },
+    "gpt-6-luna": {
+      "capabilities": [
+        "bounded-execution",
+        "research",
+        "classification",
+        "structured-output"
+      ],
+      "role_recommendation": [
+        "inventory",
+        "reproducible-research",
+        "focused-tests",
+        "mechanical-edits"
+      ],
+      "actual_model": "UNVERIFIED",
+      "selection_basis": "Official model catalogue reviewed on checked_on date; role mapping is TIKAZ recommendation, not evidence of execution.",
+      "source_urls": [
+        "https://developers.openai.com/api/docs/models/gpt-6-luna"
+      ]
+    },
+    "gpt-6-sol": {
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "tool-use"
+      ],
+      "role_recommendation": [
+        "explicit-fallback-only"
+      ],
+      "actual_model": "UNVERIFIED",
+      "selection_basis": "Official model catalogue reviewed on checked_on date; role mapping is TIKAZ recommendation, not evidence of execution.",
+      "source_urls": [
+        "https://developers.openai.com/api/docs/models"
+      ]
+    }
+  },
+  "capabilities": {
+    "responses_api": {
+      "status": "integration-target",
+      "contract": "New application integrations may use Responses API where the application host implements it; a Skill file alone does not provide this runtime."
+    },
+    "agents_sdk": {
+      "status": "integration-target",
+      "contract": "Use only in an application that integrates Agents SDK; a Markdown Skill alone does not provide agent lifecycle or tracing."
+    },
+    "mcp": {
+      "status": "integration-target",
+      "contract": "MCP requires an MCP-capable host and configured server; Skill content alone does not create a connection."
+    },
+    "structured_output": {
+      "status": "preferred",
+      "contract": "Prefer schema-validated output for ledgers, routing records, and handoffs."
+    },
+    "requested_actual_separation": {
+      "status": "required",
+      "contract": "requested_model and actual_model are independent fields; use UNVERIFIED when runtime telemetry is absent."
+    }
+  },
+  "validation_commands": [
+    "python scripts/validate_compatibility.py",
+    "python -m unittest discover -s tests",
+    "python scripts/export_distribution.py --suite context-economy --output .\\_distribution"
+  ],
+  "provenance": {
+    "provider_model_selection": "UNVERIFIED",
+    "provider_billing_telemetry": "Pending",
+    "source_of_truth": "TIKAZ-AI-Skills/distribution/manifest.json"
+  },
+  "checked_on": "2026-11-13",
+  "sources": [
+    "https://developers.openai.com/api/docs/models",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "https://developers.openai.com/api/docs/responses",
+    "https://developers.openai.com/api/docs/guides/agents/sdk",
+    "https://developers.openai.com/api/docs/guides/tools-connectors-mcp"
+  ],
+  "integration_targets": {
+    "responses_api": {
+      "kind": "API integration target",
+      "support": "integration guidance only; a Markdown Skill does not expose this runtime",
+      "source": "https://developers.openai.com/api/docs/responses"
+    },
+    "agents_sdk": {
+      "kind": "SDK integration target",
+      "support": "integration guidance only; requires an application host implementing the SDK",
+      "source": "https://developers.openai.com/api/docs/guides/agents/sdk"
+    },
+    "mcp": {
+      "kind": "tool protocol integration target",
+      "support": "integration guidance only; requires a host configured with an MCP client/server",
+      "source": "https://developers.openai.com/api/docs/guides/tools-connectors-mcp"
+    }
+  }
+}
+
